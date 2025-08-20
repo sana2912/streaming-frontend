@@ -15,7 +15,7 @@ function TrackProvide({ children }) {
 
     // auth state
     const [profile_image, set_profile_image] = useState(null);
-    const [login, set_login] = useState(null);
+    const [login, set_login] = useState(false);
 
     // interaction state
     const [list_popup, set_list_popup] = useState(false);

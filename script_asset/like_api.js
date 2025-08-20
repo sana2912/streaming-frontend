@@ -30,6 +30,7 @@ const update_like_state = async (track_id, state) => {
 
 const get_like_state = async (track_id, set_like_state) => {
     try {
+        console.log(`${url}/api/user/like/like_state`);
         const response = await axios.get(`${url}/api/user/like/like_state`, {
             params: {
                 track_id

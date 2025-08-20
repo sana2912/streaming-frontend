@@ -58,7 +58,9 @@ const Track = () => {
         }
     }
     useEffect(() => {
-        if (track) {
+        console.log('use state is run 1');
+        if (track && login) {
+            console.log('use state is run 2');
             get_like_state(track._id, set_like_state);
         }
     }, [track]);

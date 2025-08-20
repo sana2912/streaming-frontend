@@ -22,7 +22,7 @@ function App() {
         </div>
       </div>
       <Track />
-      <audio onEnded={track_playing} ref={audio_ref} preload="auto" src={track ? track.audio : ''}></audio>
+      <audio onEnded={track_playing} ref={audio_ref} preload="auto" src={track ? track.audio : <></>}></audio>
       {list_popup
         ? <div className="absolute h-[100%] w-[100%] bg-neutral-200 opacity-20 z-1"></div>
         : <></>}

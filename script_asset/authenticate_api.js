@@ -1,5 +1,6 @@
 import axios from "axios";
 const url = import.meta.env.VITE_ENDPOINT;
+console.log(url);
 
 //POST: axios.post(url, data, config)
 //GET: axios.get(url, config)
@@ -18,7 +19,7 @@ const am_i_login = async (set_profile_image, set_login) => {
             throw new Error(response.data.message);
         }
     } catch (error) {
-        console.log(error.message);
+        console.log("we getting some error from server");
     }
 }
 
