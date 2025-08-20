@@ -24,8 +24,12 @@ function App() {
       <Track />
       <audio onEnded={track_playing} ref={audio_ref} preload="auto" src={track ? track.audio : <></>}></audio>
       {list_popup
-        ? <div className="absolute h-[100%] w-[100%] bg-neutral-200 opacity-20 z-1"></div>
+        ? <div className="absolute h-screen w-[100%] bg-neutral-200 opacity-20 z-1"></div>
         : <></>}
+      {track === null && <div className="absolute h-screen w-[100%] bg-neutral-200 opacity-20 z-1 flex justify-center items-center">
+        <div className="absolute w-20 h-20 border-r-neutral-200 border-6 rounded-full animate-spin z-10"></div>
+      </div>
+      }
       <ToastContainer position="top-center" />
     </div>
   )
