@@ -43,7 +43,13 @@ src/
 ├─ main.jsx # entry point
 └─ index.css # global styles
 
+## 🎵 Track Context (my center state management)
 
+The **Track Context** is a central state manager for the User Frontend, handling audio playback, tracks, albums, playlists, and user authentication.  
+It wraps the entire app via `TrackProvide`, allowing any component to access shared state and functions like `play_audio()`, `next_track()`, `seek_func()`, and `sound_volum()`.  
+
+### 📂 Usage
+Wrap your app with `TrackProvide` in `main.jsx` or `App.jsx`, then use `useContext(Track_context)` in components to access state and actions.
 ---
 
 ## ▶️ Getting Started  
