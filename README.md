@@ -1,5 +1,5 @@
 # 🎵 Streaming User Frontend  
-# **see this web ** [streaming frontend](https://streaming-front.netlify.app/)  
+# **see this web ** [streaming frontend](https://streaming-front.netlify.app)  
 This repository is the **User Frontend** of a streaming application.  
 It provides UI for user authentication, content browsing, playlists, and track management.  
 
