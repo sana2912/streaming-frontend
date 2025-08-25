@@ -1,12 +1,55 @@
-# React + Vite
+# 🎵 Streaming User Frontend  
+# **see this web ** [streaming frontend](https://streaming-front.netlify.app/)  
+This repository is the **User Frontend** of a streaming application.  
+It provides UI for user authentication, content browsing, playlists, and track management.  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🔗 Project in System  
+- **Frontend (User side perform on netlify):** **this repo**  
+- **Backend (User side perform on render):** [stream-user-backend](https://github.com/sana2912/streaming-user-backend.git)  
+- **Frontend (Admin side perfrom on netlify):** [stream_admin_ui](https://github.com/sana2912/stream_admin_ui.git)  
+- **Backend (Admin side perfom on render):** [stream_admin_backned](https://github.com/sana2912/stream_admin_backned.git)  
+- **for more understanding see full systems picture:** [image](https://res.cloudinary.com/ddlspu2uq/image/upload/v1756123510/system_d4p3cd.jpg)  
+*(see full system diagram in repo image)*  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ⚙️ Tech Stack  
+- React.js  
+- Context API (for state management)  
+- Tailwind CSS (styling)  
+- Axios (for API calls)  
+- React Router (routing)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features  
+- User authentication (Login / Register)
+- User authentication (login / register with google account oauth2.0)
+- Browse tracks, albums, playlists like
+- Search tracks & albums  
+- Play music (mini-player component)  
+- Like tracks & manage playlists  
+
+---
+
+## 📂 Project Structure  
+src/
+├─ assets/ # images, icons, audio, poster
+├─ component/ # React components (login, register, navbar, track, album, playlist, etc.)
+├─ context/ # React Context for global state
+├─ App.jsx # main app component
+├─ main.jsx # entry point
+└─ index.css # global styles
+
+
+---
+
+## ▶️ Getting Started  
+```bash
+# install dependencies
+npm install  
+
+# run the app
+npm start  # or npm run dev if using Vite
