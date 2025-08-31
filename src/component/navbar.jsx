@@ -67,7 +67,7 @@ const Nav = () => {
                     <div className="h-full flex items-center">
                         {!profile_image ?
                             <img onClick={() => set_form_popup(prev => !prev)} className="ml-2 size-8/10 cursor-pointer object-cover" src={assets.user_profile} />
-                            : <img onClick={() => set_form_popup(prev => !prev)} className="ml-2 size-8/10 cursor-pointer object-cover" src={profile_image} />
+                            : <img onClick={() => set_form_popup(prev => !prev)} className="ml-2 size-8/10 cursor-pointer rounded-full object-cover" src={profile_image} />
                         }
                         {login ?
                             <img onClick={logout_func} className="ml-2 size-8/10 cursor-pointer" src={assets.logout} />
