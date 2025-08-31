@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+::-webkit-scrollbar {
+    display: none;
+    width: 18px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #262626;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+input[type="search"] {
+    caret-color: rgb(255, 255, 255);
+
+}
