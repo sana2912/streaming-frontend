@@ -1,12 +1,32 @@
-# React + Vite
+# 🎵 Streaming  Frontend  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository is the **User Frontend** of a streaming application.  
+It provides UI for user authentication, content browsing, playlists, and track management.  
+---
 
-Currently, two official plugins are available:
+## 🔗 Project Position in Full System
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend (User side perform on netlify):** **this project**  
+- **Backend (User side perform on render):** [streaming-frontend](https://github.com/sana2912/streaming-user-backend.git)  
+- **Frontend (Admin side perfrom on netlify):** [stream_admin_ui](https://github.com/sana2912/stream_admin_ui.git)  
+- **Backend (Admin side perfom on render):** [stream_admin_backned](https://github.com/sana2912/stream_admin_backned.git)  
+- **for more understanding see full systems picture:** [image](https://res.cloudinary.com/ddlspu2uq/image/upload/v1756123510/system_d4p3cd.jpg)  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Tech Stack  
+- React.js  
+- Context API (for state management)  
+- Tailwind CSS (styling)  
+- Axios (for API calls)  
+- React Router (routing)  
+
+---
+
+## 🚀 Features  
+- User authentication (Login / Register)  
+- Browse tracks, albums, playlists  
+- Search tracks & albums  
+- Play music (mini-player component)  
+- Like tracks & manage playlists  
+---
