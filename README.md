@@ -1,5 +1,7 @@
 # 🎵 Streaming  Frontend  
 
+# **see this page** [streaming ui](https://streaming-front.netlify.app)  
+
 This repository is the **User Frontend** of a streaming application.  
 It provides UI for user authentication, content browsing, playlists, and track management.  
 ---
@@ -7,7 +9,7 @@ It provides UI for user authentication, content browsing, playlists, and track m
 ## 🔗 Project Position in Full System
 
 - **Frontend (User side perform on netlify):** **this project**  
-- **Backend (User side perform on render):** [streaming-frontend](https://github.com/sana2912/streaming-user-backend.git)  
+- **Backend (User side perform on render):** [streaming-user-backend](https://github.com/sana2912/streaming-user-backend.git)  
 - **Frontend (Admin side perfrom on netlify):** [stream_admin_ui](https://github.com/sana2912/stream_admin_ui.git)  
 - **Backend (Admin side perfom on render):** [stream_admin_backned](https://github.com/sana2912/stream_admin_backned.git)  
 - **for more understanding see full systems picture:** [image](https://res.cloudinary.com/ddlspu2uq/image/upload/v1756123510/system_d4p3cd.jpg)  
