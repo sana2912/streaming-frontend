@@ -1,5 +1,4 @@
 # 🎵 Streaming  Frontend  
-
 # **see this page** [streaming ui](https://streaming-front.netlify.app)  
 
 This repository is the **User Frontend** of a streaming application.  
