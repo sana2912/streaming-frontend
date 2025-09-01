@@ -16,7 +16,7 @@ function App() {
     }
   }, [location])
   return (
-    <div className="relative">
+    <div className="relative flex">
       <div className="bg-black h-screen w-screen">
         <div className="h-2/20 w-screen">
           <Nav />
