@@ -58,9 +58,9 @@ const Nav = () => {
         <div className="relative h-full pt-1">
             <div className="flex justify-center md:justify-between px-4 h-1/2">
                 <div className="hidden md:flex items-center gap-2 w-fit h-full">
-                    <img onClick={() => navigator('/')} className="h-7 w-7 bg-white self-center cursor-pointer rounded-full" src={assets.spotify_logo} />
-                    <img onClick={() => navigator(-1)} className="h-7 w-7 p-[0.2rem] bg-black rounded-full cursor-pointer " src={assets.arrow_left} />
-                    <img onClick={() => navigator(1)} className="h-7 w-7 p-[0.2rem]  bg-black rounded-full cursor-pointer" src={assets.arrow_right} />
+                    <img onClick={() => navigator('/')} className="size-8/10 bg-white self-center cursor-pointer rounded-full" src={assets.spotify_logo} />
+                    <img onClick={() => navigator(-1)} className="size-7/10 p-[0.2rem] bg-black rounded-full cursor-pointer " src={assets.arrow_left} />
+                    <img onClick={() => navigator(1)} className="size-7/10 p-[0.2rem]  bg-black rounded-full cursor-pointer" src={assets.arrow_right} />
                 </div>
                 <div className="h-full w-[100%] md:w-[50%] flex gap-1 justify-between md:justify-end">
                     <div className="flex h-full items-center w-[70%] md:w-[60%]">
@@ -68,11 +68,11 @@ const Nav = () => {
                     </div>
                     <div className="h-full w-fit flex items-center">
                         {!profile_image ?
-                            <img onClick={() => set_form_popup(prev => !prev)} className="ml-1 h-7 w-7 cursor-pointer rounded-full object-cover" src={assets.user_profile} />
-                            : <img onClick={() => set_form_popup(prev => !prev)} className="ml-1 h-7 w-7 cursor-pointer rounded-full object-cover" src={profile_image} />
+                            <img onClick={() => set_form_popup(prev => !prev)} className="ml-1 size-9/10 cursor-pointer rounded-full object-cover" src={assets.user_profile} />
+                            : <img onClick={() => set_form_popup(prev => !prev)} className="ml-1 size-9/10 cursor-pointer rounded-full object-cover" src="https://res.cloudinary.com/ddlspu2uq/image/upload/v1756741477/stream/profile/nayeon.jpg" />
                         }
                         {login ?
-                            <img onClick={logout_func} className="ml-1 h-7 w-7 cursor-pointer" src={assets.logout} />
+                            <img onClick={logout_func} className="ml-1 h-8/10 cursor-pointer" src={assets.logout} />
                             : <></>
                         }
                     </div>

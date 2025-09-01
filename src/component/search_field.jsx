@@ -25,7 +25,7 @@ const Search_field = () => {
     }, [field]);
     return (
         <>
-            <div className="flex relative items-center justify-between bg-neutral-800 h-7 w-[100%] rounded-full px-2 py-[2px]">
+            <div className="flex relative items-center justify-between bg-neutral-800 h-8/10 w-[100%] rounded-full px-2 py-[2px]">
                 <input onChange={(event) => set_field(event.target.value)} className="h-full w-[80%] text-white text-[14px] focus:outline-none focus:ring-0 focus:border-transparent" type="search" name="s_field" id="s_feild" value={field} autoComplete="off" />
                 <button onClick={() => to_display(field)} className="cursor-pointer h-full"><img src={assets.search_icon} className="h-9/10" /></button>
                 <div className="flex flex-col gap-1 absolute top-10 left-0 rounded-[10px] w-[100%] bg-neutral-900 z-1">
