@@ -69,10 +69,10 @@ const Nav = () => {
                     <div className="h-full w-fit flex items-center">
                         {!profile_image ?
                             <img onClick={() => set_form_popup(prev => !prev)} className="ml-1 size-9/10 cursor-pointer object-cover" src={assets.user_profile} />
-                            : <img onClick={() => set_form_popup(prev => !prev)} className="ml-1 size-9/10 cursor-pointer rounded-full object-cover" src="https://res.cloudinary.com/ddlspu2uq/image/upload/v1756741477/stream/profile/nayeon.jpg" />
+                            : <img onClick={() => set_form_popup(prev => !prev)} className="ml-1 size-8/10 cursor-pointer rounded-full object-cover" src={profile_image} />
                         }
                         {login ?
-                            <img onClick={logout_func} className="ml-1 h-9/10 cursor-pointer" src={assets.logout} />
+                            <img onClick={logout_func} className="ml-1 h-10/10 cursor-pointer" src={assets.logout} />
                             : <></>
                         }
                     </div>
