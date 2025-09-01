@@ -71,7 +71,7 @@ const Nav = () => {
                             <img onClick={() => set_form_popup(prev => !prev)} className="max-h-full ml-1 size-8/10 cursor-pointer rounded-full object-cover" src={assets.user_profile} />
                             : <img onClick={() => set_form_popup(prev => !prev)} className="max-h-full ml-1 size-8/10 cursor-pointer rounded-full object-cover" src={profile_image} />
                         }
-                        {!login ?
+                        {login ?
                             <img onClick={logout_func} className="ml-1 size-9/10 cursor-pointer" src={assets.logout} />
                             : <></>
                         }
