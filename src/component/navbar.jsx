@@ -62,15 +62,17 @@ const Nav = () => {
                     <img onClick={() => navigator(-1)} className="size-7/10 p-[0.2rem] bg-black rounded-full cursor-pointer " src={assets.arrow_left} />
                     <img onClick={() => navigator(1)} className="size-7/10 p-[0.2rem]  bg-black rounded-full cursor-pointer" src={assets.arrow_right} />
                 </div>
-                <div className="h-full w-[100%] md:w-[30%] flex gap-[0.2rem] justify-between items-center">
-                    <Search_field />
-                    <div className="h-full flex items-center">
+                <div className="h-full w-[100%] md:w-[50%] flex gap-1 justify-between md:justify-end">
+                    <div className="flex h-full items-center w-[70%] md:w-[60%]">
+                        <Search_field />
+                    </div>
+                    <div className="h-full w-fit flex items-center">
                         {!profile_image ?
-                            <img onClick={() => set_form_popup(prev => !prev)} className="ml-2 size-8/10 cursor-pointer object-cover" src={assets.user_profile} />
-                            : <img onClick={() => set_form_popup(prev => !prev)} className="ml-2 size-8/10 cursor-pointer rounded-full object-cover" src={profile_image} />
+                            <img onClick={() => set_form_popup(prev => !prev)} className="max-h-full ml-1 size-8/10 cursor-pointer rounded-full object-cover" src={assets.user_profile} />
+                            : <img onClick={() => set_form_popup(prev => !prev)} className="max-h-full ml-1 size-8/10 cursor-pointer rounded-full object-cover" src={profile_image} />
                         }
-                        {login ?
-                            <img onClick={logout_func} className="ml-2 size-8/10 cursor-pointer" src={assets.logout} />
+                        {!login ?
+                            <img onClick={logout_func} className="ml-1 size-9/10 cursor-pointer" src={assets.logout} />
                             : <></>
                         }
                     </div>
