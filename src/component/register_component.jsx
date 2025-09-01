@@ -80,7 +80,7 @@ const Register = ({ set_state }) => {
                         {!profile ?
                             <label htmlFor="profile" className="flex items-center"><img className="h-12 cursor-pointer" src={assets.user_profile} /></label>
                             :
-                            <label htmlFor="profile"><img className="h-12 rounded-full cursor-pointer object-cover" src={URL.createObjectURL(profile)} /></label>
+                            <label htmlFor="profile"><img className="h-12 w-12 rounded-full cursor-pointer object-cover" src={URL.createObjectURL(profile)} /></label>
                         }
                         <input onChange={(event) => profile_set(event)} className="hidden" type="file" name="profile" id="profile" accept="image/*" />
                     </div>
@@ -106,7 +106,7 @@ const Register = ({ set_state }) => {
                     <p onClick={() => set_state(true)} className="mt-2 text-sm text-white">หากคุณมีบัญชีแล้ว <span className="underline decoration-white cursor-pointer">เข้าสู่ระบบ</span></p>
                     {error ? <p className=" text-red-500 mt-6">{error}</p> : <></>}
                     {onloading
-                        ? <div className="absolute w-[100%] h-[100%] flex justify-center items-center z-2">
+                        ? <div className="absolute w-[100%] h-[100%] top-0 left-0 flex justify-center items-center z-2">
                             <div className="w-14 h-14 border-4 border-white border-l-neutral-700 rounded-full animate-spin z-3"></div>
                             <div className="absolute w-[100%] h-[100%] bg-neutral-700 opacity-60"></div>
                         </div>

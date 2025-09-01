@@ -40,7 +40,7 @@ const Login = ({ set_state }) => {
             <p onClick={() => set_state(false)} className="mt-2 text-sm text-white">หากคุณยังไม่มีบัญชี <span className="underline decoration-white cursor-pointer">ลงทะเบียน</span></p>
             {error ? <p className="mt-6 text-red-500">{error}</p> : <></>}
             {onLoading
-                ? <div className="absolute w-[100%] h-[100%] flex justify-center items-center z-2">
+                ? <div className="absolute w-[100%] top-0 left-0 h-[100%] flex justify-center items-center z-2">
                     <div className="w-14 h-14 border-4 border-white border-l-neutral-700 rounded-full animate-spin z-3"></div>
                     <div className="absolute w-[100%] h-[100%] bg-neutral-700 opacity-60"></div>
                 </div>
